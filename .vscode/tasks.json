@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build-performancetest",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/PerformanceTest/PerformanceTest.csproj"
+            ],
+            "problemMatcher": "$tsc"
+        },
+        {
+            "label": "build-consoleapp",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/ConsoleApp/ConsoleApp.csproj"
+            ],
+            "problemMatcher": "$tsc"
+        }
+    ]
+}
